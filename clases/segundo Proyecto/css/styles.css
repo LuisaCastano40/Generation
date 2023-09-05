@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+}
+
+.baner{
+    width: 100%;
+    height: 600px;
+    animation: baner 10s infinite linear alternate;
+    background-size: 100% 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes baner {
+    0%, 25%{
+        background-image: url('https://img.freepik.com/foto-gratis/pintura-digital-montana-arbol-colorido-primer-plano_1340-25699.jpg?w=740&t=st=1693844013~exp=1693844613~hmac=f4374a96f0c3eb29f80a3a26f4479510cfc63ddc30e749a349ebb85570aa1b95');
+    }
+    25%, 50%{
+        background-image: url('https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg?w=900&t=st=1693844044~exp=1693844644~hmac=a7add3aa7f2f597cdd27bcd16fea2c0ae6def545ec168c789c2c5c2893c551ae');
+    }
+    50%, 75%{
+        background-image: url('https://img.freepik.com/foto-gratis/belleza-naturaleza-refleja-aguas-tranquilas-montanas-ia-generativa_188544-7867.jpg?w=740&t=st=1693844066~exp=1693844666~hmac=a7694bdbee975101db66f57524eeb27b4aff9147ebe1710638e3e00c1add69d5');
+    }
+    75%, 100%{
+        background-image: url('https://img.freepik.com/foto-gratis/tiro-angulo-alto-plataforma-madera-orilla-mar-que-conduce-al-mar-al-atardecer_181624-33316.jpg?w=740&t=st=1693844088~exp=1693844688~hmac=62f9e82612d4a174961b2f3eb13c6c4958737d7f99e191aad5c50a4cbb6d5e3d');
+    }
+}
+.info{
+    margin: auto;
+    padding: 0 50px;
+    border-radius: 25px;
+    background-color: rgba(128, 128, 128, 0.452);
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    color: black;
+    letter-spacing: 2px;
+    line-height: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.info a{
+    padding: 10px 25px;
+    background-color: lightseagreen;
+    border-radius: 5px;
+    display:inline-block;
+    text-decoration: none;
+    color: white;
+}

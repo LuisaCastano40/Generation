@@ -1,0 +1,18 @@
+<svg width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M65.7678 51.7678C66.7441 50.7915 66.7441 49.2085 65.7678 48.2322L49.8579 32.3223C48.8816 31.346 47.2986 31.346 46.3223 32.3223C45.346 33.2986 45.346 34.8816 46.3223 35.8579L60.4645 50L46.3223 64.1421C45.346 65.1184 45.346 66.7014 46.3223 67.6777C47.2986 68.654 48.8816 68.654 49.8579 67.6777L65.7678 51.7678ZM4 52.5H64V47.5H4V52.5Z" fill="white"/>
+<g filter="url(#filter0_d_14_412)">
+<circle cx="54" cy="50" r="48.5" stroke="white" stroke-width="3" shape-rendering="crispEdges"/>
+</g>
+<defs>
+<filter id="filter0_d_14_412" x="0" y="0" width="108" height="108" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_14_412"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_14_412" result="shape"/>
+</filter>
+</defs>
+</svg>
