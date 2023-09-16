@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Promedio</title>
+
+    <!-- Link para los estilos de la página -->
+    <link rel="stylesheet" href="calculadoraProm.css">
+    <!-- Link para el script de js -->
+    <script src="calculadoraProm.js"></script>
+</head>
+
+<body>
+
+    <!-- Inicio calculadora de promedios -->
+    <h1>CALCULADORA DE PROMEDIO DE NOTAS</h1>
+
+    <section class="contenedor-calculadora">
+        <form class="formulario" id="formulario">
+
+        <!-- Creamos un contenedor para cada materia -->
+            <div class="contenedor-materia">
+                <!-- Ingrese la primera materia -->
+                <label for="materia1">Ingrese la primera materia</label>
+                <input type="text" id="materia1">
+                <label for="nota1">Ingrese la nota obtenida</label>
+                <input type="number" id="nota1">
+            </div>
+
+            <div class="contenedor-materia">
+                <!-- Ingrese la segunda materia -->
+                <label for="materia2">Ingrese la segunda materia</label>
+                <input type="text" id="materia2">
+                <label for="nota2">Ingrese la nota obtenida</label>
+                <input type="number" id="nota2">
+            </div>
+
+            <div class="contenedor-materia">
+                <!-- Ingrese la tercera materia -->
+                <label for="materia3">Ingrese la tercera materia</label>
+                <input type="text" id="materia3">
+                <label for="nota3">Ingrese la nota obtenida</label>
+                <input type="number" id="nota3">
+            </div>
+
+            <div class="contenedor-materia">
+                <!-- Ingrese la cuarta materia -->
+                <label for="materia4">Ingrese la cuarta materia</label>
+                <input type="text" id="materia4">
+                <label for="nota4">Ingrese la nota obtenida</label>
+                <input type="number" id="nota4">
+            </div>
+
+            <div class="contenedor-materia">
+                <!-- Ingrese la quinta materia -->
+                <label for="materia5">Ingrese la quinta materia</label>
+                <input type="text" id="materia5">
+                <label for="nota5">Ingrese la nota obtenida</label>
+                <input type="number" id="nota5">
+            </div>
+            
+        </form>
+
+        <section class="contenedor-lista">
+            <ul id="lista-notas"></ul>
+            <button onclick="mostrarNotas()">Mostrar lista</button>
+        </section>
+
+        <button onclick="calcularPromedio()">Calcular promedio</button>
+        
+        <p id="resultado"></p>
+        <button onclick="reset()">Reset</button>
+
+    </section>
+    <!-- Fin calculadora de promedios -->
+
+</body>
+</html>
