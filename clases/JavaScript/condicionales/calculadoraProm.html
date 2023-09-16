@@ -16,6 +16,7 @@
     <!-- Inicio calculadora de promedios -->
     <h1>CALCULADORA DE PROMEDIO DE NOTAS</h1>
 
+    <!-- Inicio contenedor de toda la calculadora -->
     <section class="contenedor-calculadora">
         <form class="formulario" id="formulario">
 
@@ -62,18 +63,22 @@
             
         </form>
 
+        <!-- Inicio lista de materias con su nota -->
         <section class="contenedor-lista">
             <ul id="lista-notas"></ul>
-            <button onclick="mostrarNotas()">Mostrar lista</button>
+            <button onclick="mostrarNotas()" class="btn">Mostrar lista</button>
         </section>
+        <!-- Fin lista de materias con su nota -->
 
-        <button onclick="calcularPromedio()">Calcular promedio</button>
-        
+        <button onclick="calcularPromedio()" class="btn">Calcular promedio</button>
+
+        <!-- Mostramos el resultado del promedio -->
         <p id="resultado"></p>
-        <button onclick="reset()">Reset</button>
+        <button onclick="reset()" class="btn">Reset</button>
 
     </section>
-    <!-- Fin calculadora de promedios -->
+    <!-- Fin contenedor de toda la calculadora -->
+<!-- Fin calculadora de promedios -->
 
 </body>
 </html>

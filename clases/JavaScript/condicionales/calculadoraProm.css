@@ -1,0 +1,81 @@
+@import url('https://fonts.cdnfonts.com/css/lt-binary-neue');
+@import url('https://fonts.cdnfonts.com/css/escopedia');
+
+/* CONDICIONES INICIALES */
+:root{
+    --colorFondo:#7995A8;
+    --colorFondo2:#F5F6FE;
+    --colorEnfasisFuerte:#B0D1D9;
+    --colorEnfasisSutil:#EBEDF2;
+    --colorTexto:#5B7D93;
+    --shadow:2px 2px 5px 0px #B0D1D9;
+    --tipografia:'LT Binary Neue Round', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--colorFondo);
+    font-family: var(--tipografia);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------------CONTENEDOR CALCULADORA---------- */
+.contenedor-calculadora{
+    width: 40%;
+    height: 80%;
+    border: 2px solid var(--colorTexto);
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+    margin-top: 30px;
+    padding: 30px 0;
+}
+
+/* Datos por materia */
+.contenedor-materia{
+    width: 90%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+}
+.contenedor-materia input{
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: var(--colorFondo2);
+}
+
+/* Lista donde se muestran las materias con su nota */
+.contenedor-lista ul{
+    list-style: none;
+}
+
+/* botones */
+.btn{
+    width: 50%;
+    margin: 6px 0;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--colorTexto);
+    border: var(--colorTexto) solid;
+    color: var(--colorFondo2);
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: var(--colorFondo2);
+    color: var(--colorTexto);
+    cursor: pointer;
+}

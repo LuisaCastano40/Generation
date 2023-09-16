@@ -68,33 +68,47 @@ const notas = [];
     }
   }
   
-  //
+  //Creamos la función que me calcula el promedio de las notas
   function calcularPromedio() {
-
+    //Creo una nueva variable notas, y llamo la función getInputs que me retorna el arreglo modificado
     const notas = getInputs();
+    //me trae el elemento del HTML donde quiero mostrar el resultado del promedio
     const promedioElement = document.getElementById('resultado');
+    //Me trae el elemnto formulario de mi HTML
     const form = document.getElementById('formulario');
     
+    //calculamos el promedio de las notas. primero con la sumatoria usando el método reduce y luego dividiendo entre la cantidad de notas totales
     const promedio = notas.reduce((total, nota) => total + parseFloat(nota.nota), 0) / notas.length;
 
+    //condicional para verificar que los inputs no están vacíos cuando se da click en el botón mostrar lista
     if(notas.length === 0){
       alert('Ingrese datos válidos o complete todos los campos')
     }else{
+      //si se ingresó los datos correctamente, muéstreme en el HTML el resultado de ese promedio con dos decimales
       promedioElement.textContent = `Promedio: ${promedio.toFixed(2)}`;
+      //reset() -> propiedad de los formularios, para eliminar el contenido de todos los elementos que contenga
       form.reset();
     }
   }
   
+  //Función para eliminar el contenido de los formularios, la lista y el promedio
   function reset() {
+
+    //querySelectorAll -> Me trae TODOS los elementos de un mismo tipo, en este caso, todos los inputs
     const inputs = document.querySelectorAll('.contenedor-materia input');
+    //Traemos el elemento lista creado en HTML
     const listaNotas = document.getElementById('lista-notas');
+    //me trae el elemento del HTML donde quiero mostrar el resultado del promedio
     const promedioElement = document.getElementById('resultado');
-  
+    
+    //Inputs se comporta como arreglo, entonces le decimos que para cada input guardado en la variable inputs, me muestre vacío su valor (reseteamos todos los inputs)
     inputs.forEach((input) => {
       input.value = '';
     });
   
+    //reset de la lista
     listaNotas.innerHTML = '';
+    //reset del resultado del promedio
     promedioElement.textContent = '';
   }
   
