@@ -13,6 +13,7 @@ const contadorLetras = () =>
 
     let contador = 0;
 
+    //los string al igual que los arreglos también tienen posición
     for(let i=1; i<=palabra.length; i++){
         if(letra == palabra[i]){
             contador++;
@@ -20,5 +21,5 @@ const contadorLetras = () =>
     }
 
      //Mostramos el resultado
-     console.log(`la letra ingresada es: ${letra} y se repite ${contador} veces`); 
+     alert(`la letra ingresada es: ${letra} y se repite ${contador} veces`); 
 }
