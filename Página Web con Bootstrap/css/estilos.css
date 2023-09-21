@@ -1,0 +1,184 @@
+/*En primer lugar, se importa la fuente Montserrat de Google Fonts en tres pesos (400, 500 y 700) para ser utilizada en todo el sitio web.*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*se establece el color de fondo del body en un tono claro de celeste (#f1fbff)*/
+body {
+	background: #f1fbff;
+}
+
+/*La clase "section-padding" define un relleno de 100px arriba y abajo en cualquier elemento que tenga esta clase.*/
+.section-padding {
+	padding: 100px 0;
+}
+
+/*define el alto mínimo del elemento en 300px, pero también tiene un alto de pantalla completa (100vh), y es utilizada para definir un carrusel de imágenes.*/
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}
+
+/*se utiliza para dar estilo al subtítulo del carrusel. La posición inferior se establece en 220px del borde inferior del carrusel, y el "z-index" se establece en 2 para que esté por encima de cualquier otra capa.*/
+.carousel-caption {
+	bottom: 220px;
+	z-index: 2;
+}
+
+/*Dentro de "carousel-caption", la etiqueta "h5" tiene un tamaño de fuente grande (45px), y se define en mayúsculas y con un espaciado entre letras de 2px. También tiene un margen superior de 25px.*/
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+}
+
+/*La etiqueta "p" tiene un ancho del 60%, se centra y tiene un tamaño de fuente de 18px con un espaciado de línea de 1.9.*/
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+}
+
+/*La pseudo-clase ":before" se utiliza en "carousel-inner" para agregar una capa adicional debajo del contenido del carrusel. La posición es absoluta y cubre todo el ancho y alto del carrusel. El fondo es un negro semi-transparente (rgba(0, 0, 0, 0.7)) y la propiedad "z-index" se establece en 1 para que esté detrás del texto del carrusel.*/
+.carousel-inner:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 1;
+}
+
+/* se utiliza para dar estilo a un botón en la barra de navegación. El fondo es un tono azul más oscuro (#106eea), y tiene un margen izquierdo de 30px, bordes redondeados, un peso de fuente de 400, color de texto blanco, relleno de .5rem arriba y abajo y un espaciado de línea de 2.3.*/
+.navbar .getstarted {
+	background: #106eea;
+	margin-left: 30px;
+	border-radius: 4px;
+	font-weight: 400;
+	color: #fff;
+	text-decoration: none;
+	padding: 8px 16px;
+	line-height: 2.3;
+}
+
+/* el tamaño de fuente es de 15px, se define en mayúsculas y tiene un peso de fuente de 500.*/
+.navbar-nav a {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+/* el tamaño de fuente es de 25px, se define en mayúsculas, en negrita, y con un espaciado entre letras de 2px. El color es negro.*/
+.navbar-light .navbar-brand {
+	color: #000;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+/*el color del texto cambia a negro al pasar el cursor o al hacer clic en el elemento.*/
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+	color: #000;
+}
+
+/* el color del texto es negro.*/
+.navbar-light .navbar-nav .nav-link {
+	color: #000;
+}
+
+/*el color del texto cambia a negro al pasar el cursor o al hacer clic en el elemento.*/
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: #000;
+}
+/*se utiliza para hacer que un elemento ocupe el 100% de la altura de la pantalla. La propiedad "height" establece la altura del elemento en 100vh, lo que significa que el elemento ocupará la altura completa de la ventana del navegador.*/
+.w-100 {
+	height: 100vh;
+}
+
+/*se utiliza para estilizar un botón que se utiliza para abrir y cerrar una barra de navegación en la página web. La propiedad "padding" establece el espacio de relleno dentro del botón. La propiedad "font-size" establece el tamaño de la fuente en 18px. La propiedad "line-height" establece la altura de línea del texto dentro del botón. La propiedad "background" establece el color de fondo del botón en blanco (#fff).*/
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background: #fff;
+}
+
+/* se utiliza para estilizar las tarjetas de un portafolio en la página web. La propiedad "box-shadow" establece una sombra en la tarjeta con un desplazamiento horizontal de 15px, un desplazamiento vertical de 15px, un radio de desenfoque de 40px y un color de sombra con una opacidad del 15%.*/
+.portfolio .card {
+	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/*se utiliza para estilizar las tarjetas de un equipo en la página web. La propiedad "box-shadow" establece una sombra en la tarjeta con un desplazamiento horizontal de 15px, un desplazamiento vertical de 15px, un radio de desenfoque de 40px y un color de sombra con una opacidad del 15%.*/
+.team .card {
+	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/*se utiliza para estilizar los iconos dentro de una sección de servicios en la página web. La propiedad "font-size" establece el tamaño de la fuente en 50px.*/
+.services .card-body i {
+	font-size: 50px;
+}
+
+/*se utiliza para estilizar los iconos dentro de una sección de equipo en la página web. La propiedad "font-size" establece el tamaño de la fuente en 20px.*/
+.team .card-body i {
+	font-size: 20px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	/*me asigna un espaciado en la parte inferior*/
+	.carousel-caption {
+		bottom: 370px;
+	}
+	/*me asigna un ancho*/
+	.carousel-caption p {
+		width: 100%;
+	}
+	/*me asigna un margen-inferior*/
+	.card {
+		margin-bottom: 30px;
+	}
+	/*me asigna un ancho*/
+	.img-area img {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 767px) {
+	/*me alinea los textos en la parte central*/
+	.navbar-nav {
+		text-align: center;
+	}
+	/*me asigna un espaciado inferior*/
+	.carousel-caption {
+		bottom: 125px;
+	}
+	/*me asigna un tamaño de fuente*/ 
+	.carousel-caption h5 {
+		font-size: 17px;
+	}
+	/*Me asigna un espaciado del relleno en la parte superior e inferior de 10px, izquierda y derecha de 15 y un tamaño de fuente 15px*/
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+	/*me asigna un ancho, una línea de altura y un tamaño de fuente*/
+	.carousel-caption p {
+		width: 100%;
+		line-height: 1.6;
+		font-size: 12px;
+	}
+	/*me asigna un espaciado del relleno en la parte superior*/
+	.about-text {
+		padding-top: 50px;
+	}
+	/*me asigna un margen inferior en*/
+	.card {
+		margin-bottom: 30px;
+	}
+}
