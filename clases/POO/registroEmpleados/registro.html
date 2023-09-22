@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Empleados</title>
+    <script src="registro.js"></script>
+</head>
+<body>
+    <h1>Registro de empleados</h1>
+    <hr>
+    <p>ID</p>
+    <input type="text" id="textoID">
+    <p>Nombre</p>
+    <input type="text" id="nombre">
+    <p>Apellido</p>
+    <input type="text" id="apellido">
+    <p>Fecha de nacimiento</p>
+    <input type="text" id="nacimiento">
+    <p>Cargo</p>
+    <input type="text" id="cargo">
+    <br>
+    <br>
+    <button onclick="agregarEmpleado()">Cargar empleados</button>
+    <br>
+    <br>
+    <button onclick="mostrarEmpleado()">Mostrar empleados</button>
+    <ul id="lista"></ul>
+</body>
+</html>
