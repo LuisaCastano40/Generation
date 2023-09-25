@@ -1,3 +1,6 @@
+//CLASES Y SUBCLASES PARA HERENCIA
+
+//Clase o superclase
 class Deportista { //las clases van con la primera en mayúscula
     constructor(nombre, apellido){
         this.nombre = nombre;

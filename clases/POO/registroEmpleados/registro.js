@@ -2,6 +2,7 @@
 
 let empleados = [];
 
+//función constructora
 function Empleado (id, nombre, apellido, nacimiento, cargo){
     this.id = id;
     this.nombre = nombre;
