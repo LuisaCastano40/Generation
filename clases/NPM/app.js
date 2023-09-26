@@ -30,6 +30,6 @@ app.get('/', (reg, res) => {
 
 //que se ubique en el servidor que encuentre disponible
 const server = app.listen(0, ()=>{
-    console.log('Puerto correindo en: ', server.address().port);
+    console.log('Puerto corriendo en: ', server.address().port);
 })
 
