@@ -37,5 +37,5 @@ describe('Pruebas unitarias para app.js (creación y obtención de usuario)', ()
         expect(response.status).toBe(200);
         //verificar que el cuerpo de la respuesta sea un arreglo
         expect(Array.isArray(response.body)).toBe(true);
-    })
+    });
 });
