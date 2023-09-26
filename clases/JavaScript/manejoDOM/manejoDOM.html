@@ -4,10 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="manejoDOM.js"></script>
+    <!-- <script src="manejoDOM.js"></script> -->
+    <script async src="manejoDOM2.js"></script>
+    <!-- estilos -->
+    <link rel="stylesheet" href="manejoDOM.css">
 </head>
 <body>
-    <h1 id="titulo">Hola desarrolladores</h1>
-    <button onclick="cambiarTitulo()">cambias</button>
+    <section>
+        <h1 id="titulo">Hola desarrolladores</h1>
+        <button onclick="cambiarTitulo()">cambiar</button>
+    </section>
+
+    <section>
+        <input id="myInput" type="text" placeholder="Ingrese un dato">
+        <ul id="myList"></ul>
+    </section>
+
+    <section class="Registro">
+        <h1>Registro de usuarios</h1>
+
+        <div class="inputs">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre">
+        </div>
+        <div class="inputs">
+            <label for="correo">Correo</label>
+            <input type="email" id="correo">
+        </div>
+
+        <button class="btn">Registrar</button>
+
+        <ul id="List"></ul>
+    </section>
+    
 </body>
 </html>
