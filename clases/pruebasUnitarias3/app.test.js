@@ -19,6 +19,16 @@ describe('pruebas unitarias registro de usuarios', () => {
         const respuesta = await request(registro).get('/registro');
 
         expect(respuesta.status).toBe(200);
+        //cuerpo de ls respuesta
         expect(Array.isArray(respuesta.body)).toBe(true);
+    });
+
+    //se hace petición POST para datos 
+    it('debería devolver un error al crear usuario con datos vacíos', async () => {
+        const respuesta = await request(registro).post('/registro').send({});
+
+        //verifica petición incorrecta
+        expect(respuesta.status).toBe(400);
+        expect(respuesta.body.error).toBe('Usuario o correo incorrectos');
     });
 });
